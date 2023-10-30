@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/*
+* CSS-Design
+* Responsive Webseite - 
+*/
+
+
+/* Reset * * * * * * * * */
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+    font-size: 100%; /*Browserstandard: 16px */
+    height: 100%;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+max-width: 100%;
+margin: 20px 0 0 0;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+   
+}
+
+
+body{
+    font-family: 'Cookie', 'Teko', 'Moon Dance', sans-serif;
+    color: #303030;
+    background-image: url('img/pflanze.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.Text{
+    text-align: center;
+    margin: 300px 0px;
+    font-size: 40px;
+    color: black;
+    width: 100%
+}
+article {
+    color: black;
+    margin: 190px 400px;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+
+section{
+    margin: -70px 0px;
+}
+
+h1{
+    margin: -80px 0px;
+    width: 100%;
+}
+h2{
+    font-size: 42px;
+    text-align: center;
+}
+p{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+
+
+/* Navigation * * * * * * * * */
+
+#mobile-menu-btn{
+    display:none;
+}
+
+#navigation{
+float: right;
+margin: 20px;
+}
+
+#navigation ul li{
+    display: inline;   
+}
+
+        
+#navigation a{
+    text-decoration: none;
+    margin: 20px;
+    
+    color:#000; 
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+
+}
+
+
+#navigation a:hover {
+    color: white; 
+  
+}
+
+#navigation li a.active{
+    color: violet;
+}
+
+/* Media Query */
+@media only screen and (min-width: 760px) and (max-width: 979px) {
+    
+  .wrapper{
+   width: 100%;
+    }
+
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:20px 0 0 0;
+        margin: 0 0 0 -5px;
+        text-align: center;
+        font-family: 'Teko', 'Arial', sans-serif;
+        font-size: 30px;
+        
+    } 
+
+    a#mobile-menu-btn:hover{
+        color: violet;
+    }
+    
+    #navigation{
+        width: 100%;
+        margin: 0 1px 0 0;
+        padding: -1px;
+            
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 1px;
+        padding: 15px;
+        font-size:20px;
+        font-size: 20px;
+        width: 100%;
+        font-family: 'Teko', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+        
+        text-decoration: none;
+        font-size: 20px;
+        font-size: rem;
+        font-family: 'Teko', 'Arial', sans-serif;
+        color: #726262;
+        text-align: center;
+    }
+
+    #navigation a:hover {
+        color:violet; 
+      
+    }
+    article{
+        display: ;
+        margin: 70px;
+   
+    }
+}
+
+@media only screen and (max-width: 759px) {
+    
+
+        
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:30px 0 0 0;
+        margin: 0 0 0 -5px;
+        text-align: center;
+        font-family: 'Teko', 'Arial', sans-serif;
+        font-size: 30px;
+    } 
+
+    a#mobile-menu-btn:hover{
+        color: violet;
+    }
+    
+    #navigation{
+        width: 100%;
+        margin: 0 1px 0 0;
+        padding: -1px;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 1px;
+        padding: 15px;
+        font-size:20px;
+        font-size:rem;
+        width: 100%;
+        text-align: center;
+        font-family: 'Teko', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+    
+        float: left;
+    }
+
+    #navigation a:hover {
+        color: violet; 
+    
+}
+article{
+    display: ;
+    margin: 70px;
+
+}
+}
+
+@media only screen and (max-width: 416px) {
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:20px 0 0 0;
+        margin: 0 0 0 -5px;
+  
+        text-align: center;
+        font-family:'Teko', sans-serif;
+        font-size: 30px;
+    }
+    
+    a#mobile-menu-btn:hover{
+        color: violet;
+    }
+    
+    #navigation{
+        display: none;
+        width: 100%;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 1px;
+        padding: 15px;
+        font-size:20px;
+        font-size:rem;
+        width: 100%;
+        text-align: center;
+        font-family: 'Teko', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+    
+        float: left;
+    }
+
+    #navigation a:hover {
+        color: violet; 
+      
+    }
+    article{
+        display: ;
+        margin: 70px;
+    }
+   
+    }
+
+
+
+@media only screen and (max-width: 320px) {
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:20px 0 0 0;
+        margin: 0 0 0 -5px;
+  
+        text-align: center;
+        font-family:'Teko', sans-serif;
+        font-size: 30px;
+    }
+    
+    a#mobile-menu-btn:hover{
+        color: violet;
+    }
+    
+    #navigation{
+        display: none;
+        width: 100%;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 1px;
+        padding: 15px;
+        font-size:20px;
+        font-size:rem;
+        width: 100%;
+        text-align: center;
+        font-family: 'Teko', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+    
+        float: left;
+    }
+
+    #navigation a:hover {
+        color: violet; 
+      
+    }
+    article{
+        display: ;
+        margin: 70px;
+   
+   
+    }
+}
+

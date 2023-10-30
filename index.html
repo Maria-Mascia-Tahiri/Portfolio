@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mein Portfolio</title>
+    <meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+    <!--Webfonts-Einbindung -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Moon+Dance&family=Teko:wght@700&display=swap" rel="stylesheet">
+
+    <script type='text/javascript'>	//alert("Hallo Welt!");
+
+        //Wenn das Dokument geladen wurde…
+            $(document).ready(function () {
+   
+   //nach oben scrollen:
+	$('a.top').click(function () {
+		$('body,html').animate({scrollTop: 0}, 800);
+			return false;
+		});
+   
+   
+                //Beim Klick auf den "Menü"-Button…
+    $('a#mobile-menu-btn').click(function () {
+                // …soll die Navigation eingeblendet werden.
+                $('#navigation').slideToggle("slow");
+        });
+
+    });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Header+Navigation -->
+    
+       
+        <header>
+            
+ 
+            <a id="mobile-menu-btn" href="#">Menü</a>
+            
+                <nav id="navigation">
+                    <ul>
+                    <li><a href="persoenliches.html">Persönliches</a></li>
+                    <li><a href="vita.html">Vita</a></li>
+                    <li><a href="beruf.html">Lebensphilosophie</a></li>
+        
+                    
+                </ul>
+            
+            </nav>
+            
+            </header>
+
+            <div class="Text"><h1>Lebe Dein Leben!</h1></div>
+            
+            
+     
+     
+<!-- Content -->
+
+
+
+     
+     
+
+     
+</body>
+</html>
+
+
+    
